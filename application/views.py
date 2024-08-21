@@ -20,7 +20,7 @@ class MailingCreateView(CreateView):
     model = MailingMessage
     template_name = 'application/application_form.html'
     form_class = MailingAddForm
-    success_url = reverse_lazy('application_app:home')
+    success_url = reverse_lazy('application:home')
 
     def get_context_data(self, **kwargs):
         context_data = super().get_context_data(**kwargs)
