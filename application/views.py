@@ -54,7 +54,7 @@ class MailingUpdateView(UpdateView):
     model = MailingMessage
     template_name = 'application/application_update_form.html'
     form_class = MailingAddForm
-    success_url = reverse_lazy('application_app:home')
+    success_url = reverse_lazy('application:home')
     perms = ('application.view_mailingmessage', 'application.view_mailingsettings', 'application.toggle_active',
              'users.can_block', 'users.view_user')
 
